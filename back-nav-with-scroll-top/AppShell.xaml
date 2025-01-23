@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="back_nav_with_scroll_top.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:back_nav_with_scroll_top"
+    Shell.FlyoutBehavior="Disabled"
+    Title="back_nav_with_scroll_top">
+
+    <ShellContent
+        Title="Page A"
+        ContentTemplate="{DataTemplate local:PageAView}"
+        Route="PageA" />
+
+    <!-- Register PageBView in the Shell -->
+    <ShellContent
+        Title="Page B"
+        ContentTemplate="{DataTemplate local:PageBView}"
+        Route="PageB" />
+
+</Shell>

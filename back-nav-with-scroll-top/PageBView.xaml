@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="back_nav_with_scroll_top.PageBView"
+    Title="PageBView"
+    Shell.NavBarIsVisible="False">
+    <Grid 
+        RowDefinitions="50,*">
+        <Grid
+            BackgroundColor="LightBlue">
+            <Button 
+                Text="← Back" 
+                Clicked="OnBackButtonClicked"
+                FontSize="20"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                HorizontalOptions="Start" />
+        </Grid>
+        <Label 
+            Grid.Row="1"
+            Text="Page B View"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>

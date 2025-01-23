@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="back_nav_with_scroll_top.PageAView">
+
+    <ScrollView
+        x:Name="scrollView">
+        <Grid
+            Padding="30,0"
+            RowDefinitions="200,*"
+            HeightRequest="4000">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Button
+                x:Name="buttonFwdNav"
+                Grid.Row="1"
+                Text="Page B" 
+                Clicked="OnFwdNavClicked"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
