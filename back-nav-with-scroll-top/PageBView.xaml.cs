@@ -2,10 +2,7 @@ namespace back_nav_with_scroll_top;
 
 public partial class PageBView : ContentPage
 {
-	public PageBView()
-	{
-		InitializeComponent();
-	}
+	public PageBView() => InitializeComponent();
 
     private async void OnBackButtonClicked(object sender, EventArgs e)
     {
@@ -13,6 +10,7 @@ public partial class PageBView : ContentPage
     }
     protected override bool OnBackButtonPressed()
     {
-        return base.OnBackButtonPressed();
+        _ = Shell.Current.GoToAsync("///PageA");
+        return true;
     }
 }
